@@ -102,11 +102,7 @@ class _LocationDetailsState extends State<LocationDetails> {
                           final AndroidIntent intent = new AndroidIntent(
                               action: 'action_view',
                               data: Uri.encodeFull(
-                                  "https://www.google.com/maps/dir/?api=1&origin=" +
-                                      origin +
-                                      "&destination=" +
-                                      destination +
-                                      "&travelmode=driving&dir_action=navigate"),
+                                  "https://www.google.com/maps/place/${widget.address}"),
                               package: 'com.google.android.apps.maps');
                           intent.launch();
                         } else {
