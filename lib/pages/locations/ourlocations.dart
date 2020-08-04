@@ -113,7 +113,7 @@ class _OurLocationsState extends State<OurLocations> {
                           : '',
                       latitude: list[i].latitude,
                       longitude: list[i].longitude,
-                      address:Info.mapAddress[i],
+                      address:list[i].address,
                     ),
                   );
                 },
